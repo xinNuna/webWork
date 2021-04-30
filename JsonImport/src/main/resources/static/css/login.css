@@ -1,0 +1,188 @@
+input {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+body {
+  width: 24rem;
+  margin: 0;
+  padding: 0;
+  background: transparent url(../images/circle-bg.png) no-repeat;
+  background-size: 24rem 13.5rem;
+}
+.login-con {
+  position: relative;
+  top: 1.375rem;
+  left: 50%;
+  width: 13.275rem;
+  height: 8.575rem;
+  margin-left: -6.6375rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-con .login-img {
+  float: left;
+}
+.login-con .login-img img {
+  width: 8.3375rem;
+  vertical-align: middle;
+}
+.login-con .login {
+  float: left;
+  width: 4.9375rem;
+  height: 100%;
+  background-color: #fff;
+}
+.login-con .login h5 {
+  margin-top: 1.875rem;
+  font-size: 0.25rem;
+  text-align: center;
+  font-weight: 400;
+  color: #a6b9ed;
+}
+.login-con .login .login-form {
+  position: relative;
+  height: 7.5rem;
+  margin-top: 0.625rem;
+}
+.login-con .login .login-form .account,
+.login-con .login .login-form .password {
+  height: 0.525rem;
+  width: 3.7rem;
+  margin-left: 0.625rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 0.125rem;
+}
+.login-con .login .login-form .account input,
+.login-con .login .login-form .password input {
+  position: relative;
+  height: 0.525rem;
+  width: 2.75rem;
+  margin: 0 0 0 0.8125rem;
+  padding: 0;
+  line-height: 0.525rem;
+  font-size: 0.175rem;
+  border: none;
+  vertical-align: top;
+  outline: none;
+}
+.login-con .login .login-form .password {
+  margin-top: 0.75rem;
+}
+.login-con .login .login-form .password::before {
+  content: "";
+  position: absolute;
+  top: 1.4rem;
+  left: 0.825rem;
+  display: block;
+  width: 0.3875rem;
+  height: 0.3875rem;
+  background: transparent url(../images/password.png) no-repeat;
+  background-size: 0.3875rem;
+}
+.login-con .login .login-form .password::after {
+  content: "";
+  position: absolute;
+  top: 1.35rem;
+  left: 1.375rem;
+  display: block;
+  width: 1px;
+  height: 0.525rem;
+  background-color: #f0f0f0;
+}
+.login-con .login .login-form .account::before {
+  content: "";
+  position: absolute;
+  top: 0.1rem;
+  left: 0.825rem;
+  display: block;
+  width: 0.3875rem;
+  height: 0.3875rem;
+  background: transparent url(../images/users.png) no-repeat;
+  background-size: 0.3875rem;
+}
+.login-con .login .login-form .account::after {
+  content: "";
+  position: absolute;
+  top: 0.025rem;
+  left: 1.375rem;
+  display: block;
+  width: 1px;
+  height: 0.525rem;
+  background-color: #f0f0f0;
+}
+.login-con .login .login-form .memory {
+  height: 0.2625rem;
+  margin: 0.1875rem 0 0 0.75rem;
+}
+.login-con .login .login-form .memory label {
+  height: 0.525rem;
+  font-size: 0.2rem;
+  vertical-align: top;
+}
+.login-con .login .login-form .memory label input {
+  width: 0.1875rem;
+  height: 0.1875rem;
+  border-color: #c2c1c1;
+  vertical-align: middle;
+}
+.login-con .login .login-form .memory span {
+  font-size: 0.2rem;
+  color: #c2c1c1;
+  cursor: pointer;
+}
+.login-con .login .login-form .memory span:hover {
+  color: #3d69e6;
+}
+.login-con .login .login-form .memory a {
+  float: right;
+  margin-right: 0.45rem;
+  font-size: 0.2rem;
+  color: #c2c1c1;
+  text-decoration: none;
+}
+.login-con .login .login-form .memory a:hover {
+  color: #3d69e6;
+}
+.login-con .login .login-form .loginin {
+  margin: 0.625rem 0 0 0.625rem;
+}
+.login-con .login .login-form .loginin input {
+  width: 3.75rem;
+  height: 0.575rem;
+  line-height: 0.575rem;
+  background-color: #3d69e6;
+  color: #fff;
+  font-size: 0.225rem;
+  border-radius: 0.125rem;
+  outline: none;
+  cursor: pointer;
+}
+footer {
+  position: relative;
+  top: 1.75rem;
+  color: #c2c1c1;
+  text-align: center;
+  font-size: 0.2rem;
+}
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
+  }
+}

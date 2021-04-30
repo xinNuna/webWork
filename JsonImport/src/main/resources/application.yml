@@ -1,0 +1,20 @@
+server:
+  port: 8887
+  address: 0.0.0.0
+  tomcat:
+    accept-count: 150
+    threads:
+      max: 250
+spring:
+  datasource:
+    name: springdemo
+    url: jdbc:mysql://localhost:3306/springimport_excel?serverTimezone=UTC
+    username: root
+    password: 135796
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.demo.bean
+

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大学生考研大数据管理与分析平台</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <header>
+        <div class="line w"></div>
+        <div class="logo w clearfix">
+            <h1 class="clearfix">
+                <a href="./index.html">大学生考研大数据管理与分析平台</a>
+                <span class="link">大学生考研大数据管理与分析平台</span>
+            </h1>
+        </div>
+        <div class="title"></div>
+    </header>
+    <!-- 导航条 -->
+    <nav>
+        <div class="nav w">
+            <ul class="items">
+                <li class="item current">首页</li>
+                <li class="item pos">位置视角
+                    <ul class="pos-view">
+                        <li>二教视角</li>
+                        <li>四教视角</li>
+                        <li>班级视角</li>
+                        <li>寝室视角</li>
+                        <li>居家视角</li>
+                        <li>其他视角</li>
+                    </ul>
+                </li>
+                <li class="item rate">考研意向率
+                    <ul class="rate-view">
+                        <li>年级视角</li>
+                        <li>班级视角</li>
+                        <li>寝室视角</li>
+                    </ul>
+                </li>
+                <li class="item aroundMe">与我相关
+                    <ul class="aroundMe-view">
+                        <li>我的寝室</li>
+                        <li>我的班级</li>
+                    </ul>
+                </li>
+                <li class="item queryData">查询</li>
+                <li class="item">导入文件</li>
+            </ul>
+            <div class="item login loginStatus"></div>
+            <script type="text/html" id="loginTpl">
+                当前访客身份：<span>{{loginRole}}<a href="{{loginUrl}}" class="cancle">{{loginText}}</a></span>
+            </script>
+        </div>
+    </nav>
+    <!-- 主内容展示区 -->
+    <main>
+        <div class="w mainContain">
+            <div class="index">
+                <div class="index_bg">
+                    <img src="./images/xianjin.jpg" alt="先进制造工程学院" title="先进制造工程学院">
+                </div>
+                <div class="postgraduate_info">
+                    <h4>考研资讯</h4>
+                    <div class="h4_line"></div>
+                    <div class="postgraduate_info_box">
+                        <div class="postgraduate_info_img">
+                            <img src="./images/postgraduate_info_img1.png" alt="图片">
+                        </div>
+                        <div class="postgraduate_info_trend">
+                            <h5>考研动态<a href="https://yz.chsi.com.cn/kyzx/kydt/">更多&gt;&gt;</a></h5>
+                            <ul class="trend_list">
+                                <li><a href="https://yz.chsi.com.cn/kyzx/kydt/202009/20200904/1972749686.html">教育部公布2021年全国硕士研究生招生考试初试时间</a></li>
+                                <li><a href="https://yz.chsi.com.cn/kyzx/jybzc/202009/20200904/1972918872.html">教育部关于印发《2021年全国硕士研究生招生工作管理规定》的通知</a></li>
+                                <li><a href="https://yz.chsi.com.cn/kyzx/kydt/202010/20201016/1984297834.html">关于做好2021年少数民族高层次骨干人才研究生招生报考工作的通知</a></li>
+                                <li><a href="https://yz.chsi.com.cn/kyzx/kydt/202010/20201016/1984055719.html">中办国办：2035年基本建成高质量学校体育体系</a></li>
+                                <li><a href="https://yz.chsi.com.cn/kyzx/kydt/202010/20201015/1984002973.html">河北省2021年硕士研究生招生考试少数民族骨干计划报名校验码领取说明</a></li>
+                                <li><a href="https://yz.chsi.com.cn/kyzx/kydt/202010/20201014/1983783312.html">辽宁省2020年同等学力人员申请硕士学位全国统考考生防疫须知</a></li>
+                                <!-- <li><a href="https://yz.chsi.com.cn/kyzx/kydt/202010/20201013/1983610199.html">四川省关于2021年硕士研究生少数民族高层次骨干计划校验码领取方式的通知</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="postgraduate_info_people">
+                            <h5>考研人物<a href="https://yz.chsi.com.cn/kyzx/kyrw/">更多&gt;&gt;</a></h5>
+                            <ul class="people_list">
+                                <li>
+                                    <a href="https://yz.chsi.com.cn/kyzx/kyrw/202006/20200616/1931208540.html">四川警校“学霸宿舍”5兄弟全考上研究生 4人同上中国人民公安大学</a>
+                                </li>
+                                <li>
+                                    <a href="https://yz.chsi.com.cn/kyzx/kyrw/201912/20191219/1860870282.html">四川大学学霸“男寝”：6人拿下17个名校保研offer</a>
+                                </li>
+                                <li>
+                                    <a href="https://yz.chsi.com.cn/kyzx/kyrw/201907/20190702/1804079995.html">河南5位超级学霸：来自同一所大学，还全部成功保送985研究生！ </a>
+                                </li>
+                                <li>
+                                    <a href="https://yz.chsi.com.cn/kyzx/kyrw/201906/20190621/1799941859.html">母女同读研妈妈今年毕业 大学校长为55岁硕士点赞</a>
+                                </li>
+                                <li>
+                                    <a href="https://yz.chsi.com.cn/kyzx/kyrw/201906/20190628/1802677908.html">全班34人，24人考取研究生 这个综合改革试点班有啥秘诀</a>
+                                </li>
+                                <li>
+                                    <a href="https://yz.chsi.com.cn/kyzx/kyrw/201905/20190515/1791485069.html">寝室四人同时考上研究生，秘诀是“有梦就不要放弃”</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="https://yz.chsi.com.cn/kyzx/kyrw/201904/20190415/1782575073.html">“00后”男孩曾因学习差退学，通过自学一路考上硕士研究生</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position">
+                <div class="pos_erjiao"></div>
+                <div class="pos_sijiao"></div>
+                <div class="pos_class"></div>
+                <div class="pos_dom"></div>
+                <div class="pos_home"></div>
+                <div class="pos_other"></div>
+            </div>
+            <div class="rates">
+                <div class="rate_pro"></div>
+                <div class="rate_class"></div>
+                <div class="rate_dom"></div>
+            </div>
+            <div class="around">
+                <div class="around_dom">
+                </div>
+                <div class="around_class">
+                </div>
+            </div>
+            <div class="query">
+            </div>
+            <div class="upload">
+                <div class="container">
+                    <div class="form-group">
+                        <label>请选择文件 - 学生考研位置信息</label>
+                        <input type="file" accept="application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" onchange="uploadExcel1(this)" onclick="this.value=''">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 0%;" id="bar1">0%</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>请选择文件 - 学生住宿信息</label>
+                        <input type="file" accept="application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" onchange="uploadExcel2(this)" onclick="this.value=''">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 0%;" id="bar2">0%</div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    // 数据处理入口
+                    function uploadExcel1(obj) {
+                        excelToData1(obj);
+                    }
+
+                    // 读取Excel转换为json
+                    function excelToData1(obj) {
+                        // 获取文件对象
+                        let files = obj.files;
+                        // 如果有文件
+                        if (files.length) {
+                            // 初始化一个FileReader实例
+                            let reader = new FileReader();
+                            let file = files[0];
+                            // 看下文件是不是xls或者xlsx的
+                            let fullName = file.name; // 全名
+                            let filename = fullName.substring(0, fullName.lastIndexOf(".")); // 文件名
+                            let fixName = fullName.substring(fullName.lastIndexOf("."), fullName.length); // 后缀名
+                            // 处理excel表格
+                            if (fixName == ".xls" || fixName == ".xlsx") {
+                                reader.onload = function(ev) {
+                                    let data = ev.target.result;
+                                    // 获取到excel
+                                    let excel = XLSX.read(data, {
+                                        type: 'binary'
+                                    });
+                                    // 获取第一个标签页名字
+                                    let sheetName = excel.SheetNames[0];
+                                    // 根据第一个标签页名，获取第一个标签页的内容
+                                    let sheet = excel.Sheets[sheetName];
+                                    // 转换为JSON
+                                    let sheetJson = XLSX.utils.sheet_to_json(sheet);
+                                    // console.log(sheetJson instanceof Array);
+                                    let excelData = {
+                                        data: sheetJson
+                                    };
+                                    // 输出获得的json数据
+                                    let xhr = new XMLHttpRequest();
+                                    // 配置ajax请求
+                                    xhr.open('post', 'http://localhost:8887/import');
+                                    xhr.setRequestHeader('Content-Type', 'application/json');
+                                    xhr.upload.onprogress = function(ev) {
+                                        // ev.loaded    已上传文件的大小
+                                        // ev.total     文件总大小
+                                        let result = (ev.loaded / ev.total).toFixed(2) * 100 + '%';
+                                        // console.log(result);
+                                        document.querySelector('#bar1').style.width = result;
+                                        document.querySelector('#bar1').innerHTML = result;
+                                    };
+                                    xhr.send(JSON.stringify(excelData));
+                                    // 当ajax接收完服务器端的响应就会触发
+                                    xhr.onload = function() {
+                                        console.log(JSON.parse(xhr.responseText));
+                                    }
+                                }
+                            } else {
+                                alert("只支持excel，请上传正确的文件！")
+                            }
+                            reader.readAsBinaryString(file);
+                        }
+                    }
+                    // 数据处理入口
+                    function uploadExcel2(obj) {
+                        excelToData2(obj);
+                    }
+
+                    // 读取Excel转换为json
+                    function excelToData2(obj) {
+                        // 获取文件对象
+                        let files = obj.files;
+                        // 如果有文件
+                        if (files.length) {
+                            // 初始化一个FileReader实例
+                            let reader = new FileReader();
+                            let file = files[0];
+                            // 看下文件是不是xls或者xlsx的
+                            let fullName = file.name; // 全名
+                            let filename = fullName.substring(0, fullName.lastIndexOf(".")); // 文件名
+                            let fixName = fullName.substring(fullName.lastIndexOf("."), fullName.length); // 后缀名
+                            // 处理excel表格
+                            if (fixName == ".xls" || fixName == ".xlsx") {
+                                reader.onload = function(ev) {
+                                    let data = ev.target.result;
+                                    // 获取到excel
+                                    let excel = XLSX.read(data, {
+                                        type: 'binary'
+                                    });
+                                    // 获取第一个标签页名字
+                                    let sheetName = excel.SheetNames[0];
+                                    // 根据第一个标签页名，获取第一个标签页的内容
+                                    let sheet = excel.Sheets[sheetName];
+                                    // 转换为JSON
+                                    let sheetJson = XLSX.utils.sheet_to_json(sheet);
+                                    // console.log(sheetJson instanceof Array);
+                                    let excelData = {
+                                        data: sheetJson
+                                    };
+                                    // 输出获得的json数据
+                                    let xhr = new XMLHttpRequest();
+                                    // 配置ajax请求
+                                    xhr.open('post', 'http://localhost:8887/importDep');
+                                    xhr.setRequestHeader('Content-Type', 'application/json');
+                                    xhr.upload.onprogress = function(ev) {
+                                        // ev.loaded    已上传文件的大小
+                                        // ev.total     文件总大小
+                                        let result = (ev.loaded / ev.total).toFixed(2) * 100 + '%';
+                                        // console.log(result);
+                                        document.querySelector('#bar2').style.width = result;
+                                        document.querySelector('#bar2').innerHTML = result;
+                                    };
+                                    xhr.send(JSON.stringify(excelData));
+                                    // 当ajax接收完服务器端的响应就会触发
+                                    xhr.onload = function() {
+                                        let res = xhr.responseText;
+                                        console.log(JSON.parse(res));
+<!--                                        if (res.data.meta.status) {-->
+<!--                                            alert("上传成功！");-->
+<!--                                        } else {-->
+<!--                                            alert("上传失败，服务器发生未知错误，请稍后重试！");-->
+<!--                                        }-->
+                                    }
+                                }
+                            } else {
+                                alert("只支持excel，请上传正确的文件！")
+                            }
+                            reader.readAsBinaryString(file);
+                        }
+                    }
+                </script>
+            </div>
+            <script type="text/html" id="unLogin">
+                <div class="otherLogin">
+                    <p>该功能需登录后才可使用! &gt;&gt; <a href="./login.html" class="around_link">{{loginText}}</a></p>
+                </div>
+            </script>
+            <script type="text/html" id="aroundMeDom">
+                <!-- 显示寝室相关数据 -->
+                <div class="aroundBox_dom">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>姓名</th>
+                                <th>复习地点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{each around_data_dom}}
+                            <tr>
+                                <td>{{$value.name}}</td>
+                                <td>{{$value.address}}</td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </script>
+            <script type="text/html" id="aroundMeClass">
+                <!-- 显示班级相关数据 -->
+                <div class="aroundBox_class">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>姓名</th>
+                                <th>学号</th>
+                                <th>复习地点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{each around_data_class}}
+                            <tr>
+                                <td>{{$value.name}}</td>
+                                <td>{{$value.sno}}</td>
+                                <td>{{$value.address}}</td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </script>
+            <script type="text/html" id="queryOK">
+                <div class="queryInp">
+                    <input type="text" name="queryKey" id="query_inp" placeholder="请输入待查询同学的姓名" class="query_name">
+                    <button id='query_btn'>查询</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>是否考研</th>
+                        <th>复习地点</th>
+                    </tr>
+                    {{each queryData}}
+                    <tr>
+                        <td>{{queryName}}</td>
+                        <td>{{$value.sno}}</td>
+                        {{if $value.address == ""}}
+                        <td>否</td>
+                        {{else if $value.address != ""}}
+                        <td>是</td>
+                        {{/if}}
+                        <td>{{$value.address}}</td>
+                    </tr>
+                    {{/each}}
+                </table>
+            </script>
+        </div>
+    </main>
+    <!-- 底部 -->
+    <footer>
+        <p>友情链接：<a href="http//www.cqupt.edu.cn/">http//www.cqupt.edu.cn/</a></p>
+        <p>版权所有：重庆邮电大学 网站备案号：xxxxxxx 网联备案号：xxxxxx 技术支持：xxxxxxx </p>
+    </footer>
+    <!-- js文件 -->
+    <script src="./js/flexible.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/template-web.js"></script>
+    <script src="./js/xlsx.core.min.js"></script>
+    <!-- <script src="./js/axios.min.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://lib.baomitu.com/echarts/4.7.0/echarts.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
